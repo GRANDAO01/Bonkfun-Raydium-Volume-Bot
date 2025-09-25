@@ -1,0 +1,9 @@
+node_modules/
+src/bonkfun/keypairs/
+src/bonkfun/backup/
+src/raydiumcpmm/backup/
+src/raydiumcpmm/keypairs/
+
+.env
+error.txt
+errorlog.txt

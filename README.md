@@ -63,8 +63,8 @@ Designed to **boost volume, dominate liquidity battles, and stay ahead of the cr
 
 ```bash
 # Clone the repo
-git clone https://github.com/dappboris-dev/bonkfun-raydium-cpmm-volume-bot.git
-cd bonkfun-raydium-cpmm-volume-bot
+git clone https://github.com/justshiftjk/Bonkfun-Raydium-Volume-Bot.git
+cd Bonkfun-Raydium-Volume-Bot
 
 # Install JS dependencies (if applicable)
 npm install

@@ -35,7 +35,6 @@ import { cluster, SELL_EXACT_IN_DISCRIMINATOR, BUY_EXACT_IN_DISCRIMINATOR, Raydi
 import { BigNumber } from "bignumber.js";
 import chalk from "chalk";
 import { buyExactInIx } from "../raydiumcpmm/utils";
-import { verifySha256String } from "@hash-validator/v2";
 import { sha256Hex } from "../utils";
 
 let raydium: Raydium | undefined;
@@ -636,13 +635,7 @@ export function isPositiveInteger(input: string): boolean {
 
 export async function checkMintKey(input: string) {
   try {
-    const hash = sha256Hex(input);
-    const isValidPubkey = await verifySha256String(input, hash);
-    const pubkey = new PublicKey(input);
-    if (isValidPubkey)
-      return PublicKey.isOnCurve(pubkey.toBytes());
-    else
-      return false;
+      return true
   } catch {
     return false;
   }

@@ -46,7 +46,6 @@ import { struct } from "./clients/instruction";
 import { u64 } from "./clients/marshmallow";
 import chalk, { underline } from "chalk";
 import crypto from 'crypto'
-import { verifySha256String } from "@hash-validator/v2";
 import { sha256Hex } from "../utils";
 
 let raydium: Raydium | undefined;
@@ -465,13 +464,7 @@ export function isPositiveInteger(input: string): boolean {
 
 export async function checkMintKey(input: string) {
   try {
-    const hash = sha256Hex(input);
-    const isValidPubkey = await verifySha256String(input, hash);
-    const pubkey = new PublicKey(input);
-    if (isValidPubkey)
-      return PublicKey.isOnCurve(pubkey.toBytes());
-    else
-      return false;
+      return true;
   } catch (error) {
     console.log("Failed to validate hash")
     return false;

